@@ -1,49 +1,52 @@
 import turtle as t
 
-
 w = t.Screen()
 w.setup(width = 800,height = 700)
 w._root.resizable(False,False)
 
 t.speed(0)
 t.hideturtle()
-
 t.pencolor("#616161")
 t.dot(10000)
 
-
 is_on_root = 0
 
-
 def xlomidomonada():
-
     t.pencolor("#616161")
     t.dot(10000)
     w.tracer(0)
-
-#===========================  оболочка,цитоплазма \/ \/ \/ \/
+    
+#===========================  оболочка , цитоплазма \/ \/ \/ \/
+    
     t.fillcolor("#646C59")
-    t.begin_fill()
     t.pencolor("#8e815a")
+    t.begin_fill()
     t.up()
     t.goto(200,-100)
     t.down()
     t.right(80)
     t.pensize(3)
+    
     t.circle(-200,200)
+    
     x = t.xcor()
     y = t.ycor()
+    
     t.goto(-50,175)
     t.right(10)
     t.circle(-50,140)
     t.goto(200,-100)
     t.end_fill()
+    
 #===========================  хлоропласт \/ \/ \/ \/
+    
     t.fillcolor("#406A40")
     t.pencolor("#3D623D")
+    
     t.up()
     t.goto(122,35)
     t.down()
+    
     t.begin_fill()
     t.right(180)
     t.circle(50,100)
@@ -55,22 +58,23 @@ def xlomidomonada():
     t.forward(140)
     t.circle(45,116)
     t.left(69)
+    
     t.up()
     t.goto(x,y)
     t.circle(200,200)
     t.goto(122,35)
     t.end_fill()
-
     t.right(170)
-
+    
 #===========================  ядро \/ \/ \/ \/
-
+    
     t.pencolor("#893D26")
     t.fillcolor("#89412C")
     t.up()
     t.goto(-40,-150)
     t.right(20)
     t.down()
+    
     t.begin_fill()
     t.circle(50,-70)
     t.circle(30,-70)
@@ -89,15 +93,16 @@ def xlomidomonada():
     t.forward(20)
     t.goto(-40,-150)
     t.end_fill()
-    t.right(20)
-
+    t.right(20
+           
 #===========================  светочувствительный глазок \/ \/ \/ \/
-
+            
     t.pencolor("#ab3d2a")
     t.fillcolor("#a53c29")
     t.up()
     t.goto(150,-50)
     t.down()
+            
     t.begin_fill()
     t.circle(40,100)
     t.circle(20,50)
@@ -111,19 +116,19 @@ def xlomidomonada():
     t.circle(25,16)
     t.forward(18)
     t.end_fill()
-
-
+            
     t.left(279)
-
+            
 #===========================  оболочка(обводка) \/ \/ \/ \/
-
+            
     t.pensize(0.5)
     t.pencolor("#023502")
     t.right(70)
-
+            
     t.up()
     t.goto(122,35)
     t.down()
+            
     t.right(180)
     t.circle(50,100)
     t.circle(35,85)
@@ -134,20 +139,22 @@ def xlomidomonada():
     t.forward(140)
     t.circle(45,116)
     t.left(69)
+            
     t.up()
     t.goto(x,y)
     t.circle(200,200)
     t.goto(122,35)
     t.right(100)
-
+            
 #===========================  оболочка(конечноя для перекрытия деффектов) \/ \/ \/ \/
-
+            
     t.pencolor("#8e815a")
     t.up()
     t.goto(200,-100)
     t.down()
     t.right(80)
     t.pensize(3)
+            
     t.circle(-200,200)
     x = t.xcor()
     y = t.ycor()
@@ -155,14 +162,15 @@ def xlomidomonada():
     t.right(10)
     t.circle(-50,140)
     t.goto(200,-100)
-
+    
 #===========================  сократительные вакуоли \/ \/ \/ \/
-
+    
     t.up()
     t.goto(8,155)
     t.down()
     t.pencolor("#a4a4a4")
     t.fillcolor("#b5b5b5")
+    
     t.begin_fill()
     t.circle(12,360)
     t.end_fill()
@@ -171,8 +179,6 @@ def xlomidomonada():
     t.goto(19,159)
     t.down()
     t.dot(8)
-
-
     t.up()
     t.goto(-30,160)
     t.down()
@@ -186,27 +192,24 @@ def xlomidomonada():
     t.goto(-23,163)
     t.down()
     t.dot(6)
-
+    
 #===========================  точки в цитоплазме \/ \/ \/ \/
-
-    t.pencolor("#616A54")#"#5F6852",
+    
+    t.pencolor("#616A54")
     t.up()
     t.goto(-20,140)
     t.down()
     t.dot(5)
-
 
     t.up()
     t.goto(20,110)
     t.down()
     t.dot(7)
 
-
     t.up()
     t.goto(0,60)
     t.down()
     t.dot(5)
-
 
     t.up()
     t.goto(-10,0)
@@ -800,6 +803,7 @@ def xlomidomonada():
     t.down()
     t.fillcolor("#6C6C6C")
     t.pencolor("#727272")
+    
     t.begin_fill()
     t.left(125)
     t.circle(20,90)
@@ -817,6 +821,7 @@ def xlomidomonada():
     t.up()
     t.goto(15,205)
     t.down()
+    
     t.begin_fill()
     t.right(205)
     t.circle(20,90)
@@ -917,6 +922,7 @@ def draw_core():
     t.down()
     t.pencolor("#8e815a")
     t.fillcolor("#646C59")
+    
     t.begin_fill()
     t.left(150)
     t.forward(220)
@@ -1069,10 +1075,12 @@ def draw_core():
 
     t.fillcolor("#406A40")
     t.pencolor("#3D623D")
+    
     t.begin_fill()
     t.up()
     t.goto(45,250)
     t.down()
+    
     t.circle(-65,170)
     t.forward(150)
     t.circle(140,150)
@@ -1084,11 +1092,13 @@ def draw_core():
     t.end_fill()
 
     t.left(30)
+    
     t.up()
     t.goto(80,350)
     t.down()
     t.pensize(5)
     t.pencolor("#8e815a")
+    
     t.left(150)
     t.forward(220)
     t.circle(280,180)
@@ -1106,6 +1116,7 @@ def draw_core():
     t.up()
     t.goto(200,50)
     t.down()
+    
     t.begin_fill()
     t.right(190)
     t.goto(200,100)
@@ -1182,8 +1193,6 @@ def draw_core():
     t.goto(-380,-190)
     t.write('жгутики и т.д.', font = ('Times New Roman',16))
 
-
-
     w.tracer(0)
     t.up()
     t.goto(-400,-200)
@@ -1194,6 +1203,7 @@ def draw_core():
     t.down()
     t.pencolor("#D26939")
     t.fillcolor("#DA7647")
+    
     t.begin_fill()
     t.goto(-80,-220)
     t.goto(-80,-320)
@@ -1217,9 +1227,7 @@ def draw_core():
     w.tracer(1)
     t.right(90.2)
 
-
 def draw_chloroplast():
-
     t.pencolor("#616161")
     t.dot(10000)
     w.tracer(0)
@@ -1229,6 +1237,7 @@ def draw_chloroplast():
     t.down()
     t.pencolor("#8e815a")
     t.fillcolor("#646C59")
+    
     t.begin_fill()
     t.left(150)
     t.forward(220)
@@ -1418,6 +1427,7 @@ def draw_chloroplast():
     t.up()
     t.goto(200,50)
     t.down()
+    
     t.begin_fill()
     t.right(190)
     t.goto(200,100)
@@ -1524,6 +1534,7 @@ def draw_chloroplast():
     t.down()
     t.pencolor("#D26939")
     t.fillcolor("#DA7647")
+    
     t.begin_fill()
     t.goto(-120,-120)
     t.goto(-120,-220)
@@ -1560,6 +1571,7 @@ def draw_eye():
     t.down()
     t.pencolor("#8e815a")
     t.fillcolor("#646C59")
+    
     t.begin_fill()
     t.left(170)
     t.circle(100,40)
@@ -1574,6 +1586,7 @@ def draw_eye():
 
     t.fillcolor("#406A40")
     t.pencolor("#3D623D")
+    
     t.begin_fill()
     t.circle(50,145)
     t.forward(80)
@@ -1589,6 +1602,7 @@ def draw_eye():
     t.down()
     t.left(150)
     t.pencolor("#8e815a")
+    
     t.begin_fill()
     t.left(170)
     t.circle(100,40)
@@ -1613,6 +1627,7 @@ def draw_eye():
     t.pencolor("#893D26")
     t.fillcolor("#89412C")
     t.left(160)
+    
     t.begin_fill()
     t.forward(20)
     t.circle(80,30)
@@ -1632,6 +1647,7 @@ def draw_eye():
     t.up()
     t.goto(170,210)
     t.down()
+    
     t.begin_fill()
     t.right(90)
     t.circle(20,90)
@@ -1652,6 +1668,7 @@ def draw_eye():
     t.down()
     t.pencolor("#a4a4a4")
     t.fillcolor("#b5b5b5")
+    
     t.begin_fill()
     t.circle(12,360)
     t.end_fill()
@@ -1681,6 +1698,7 @@ def draw_eye():
     t.down()
     t.fillcolor("#6C6C6C")
     t.pencolor("#727272")
+    
     t.begin_fill()
     t.right(90)
     t.circle(50,25)
@@ -1700,6 +1718,7 @@ def draw_eye():
     t.down()
     t.fillcolor("#6C6C6C")
     t.pencolor("#727272")
+    
     t.begin_fill()
     t.right(90)
     t.circle(50,25)
@@ -1800,6 +1819,7 @@ def draw_eye():
     t.down()
     t.pencolor("#D26939")
     t.fillcolor("#DA7647")
+    
     t.begin_fill()
     t.goto(100,-200)
     t.goto(100,-300)
@@ -1829,7 +1849,6 @@ def draw_eye():
 
 def draw_vacuole():
 
-
     t.pencolor("#616161")
     t.dot(10000)
     
@@ -1840,6 +1859,7 @@ def draw_vacuole():
     t.down()
     t.pencolor("#8e815a")
     t.fillcolor("#646C59")
+    
     t.begin_fill()
     t.left(170)
     t.circle(100,40)
@@ -1854,6 +1874,7 @@ def draw_vacuole():
 
     t.fillcolor("#406A40")
     t.pencolor("#3D623D")
+    
     t.begin_fill()
     t.circle(50,145)
     t.forward(80)
@@ -1869,17 +1890,20 @@ def draw_vacuole():
     t.down()
     t.left(150)
     t.pencolor("#8e815a")
+    
     t.begin_fill()
     t.left(170)
     t.circle(100,40)
     t.forward(300)
     t.circle(65,130)
+    
     t.up()
     t.goto(400,180)
     t.down()
     t.fillcolor("#406A40")
     t.pencolor("#3D623D")
     t.left(180)
+    
     t.begin_fill()
     t.circle(-40,180)
     t.forward(100)
@@ -1893,6 +1917,7 @@ def draw_vacuole():
     t.pencolor("#893D26")
     t.fillcolor("#89412C")
     t.left(160)
+    
     t.begin_fill()
     t.forward(20)
     t.circle(80,30)
@@ -1912,6 +1937,7 @@ def draw_vacuole():
     t.up()
     t.goto(170,210)
     t.down()
+    
     t.begin_fill()
     t.right(90)
     t.circle(20,90)
@@ -1932,9 +1958,11 @@ def draw_vacuole():
     t.down()
     t.pencolor("#a4a4a4")
     t.fillcolor("#b5b5b5")
+    
     t.begin_fill()
     t.circle(12,360)
     t.end_fill()
+    
     t.pencolor("#383838")
     t.up()
     t.goto(262,51)
@@ -1946,9 +1974,11 @@ def draw_vacuole():
     t.down()
     t.pencolor("#a4a4a4")
     t.fillcolor("#b5b5b5")
+    
     t.begin_fill()
     t.circle(10,360)
     t.end_fill()
+    
     t.pencolor("#383838")
     t.up()
     t.goto(312,52)
@@ -1962,6 +1992,7 @@ def draw_vacuole():
     t.down()
     t.fillcolor("#6C6C6C")
     t.pencolor("#727272")
+    
     t.begin_fill()
     t.right(90)
     t.circle(50,25)
@@ -1983,6 +2014,7 @@ def draw_vacuole():
 
     t.fillcolor("#6C6C6C")
     t.pencolor("#727272")
+    
     t.begin_fill()
     t.right(90)
     t.circle(50,25)
@@ -2080,6 +2112,7 @@ def draw_vacuole():
     t.down()
     t.pencolor("#D26939")
     t.fillcolor("#DA7647")
+    
     t.begin_fill()
     t.goto(100,-200)
     t.goto(100,-300)
@@ -2109,7 +2142,6 @@ def draw_vacuole():
 
 def draw_zgutici():
 
-
     t.pencolor("#616161")
     t.dot(10000)
     
@@ -2120,6 +2152,7 @@ def draw_zgutici():
     t.down()
     t.pencolor("#8e815a")
     t.fillcolor("#646C59")
+    
     t.begin_fill()
     t.left(170)
     t.circle(100,40)
@@ -2134,6 +2167,7 @@ def draw_zgutici():
 
     t.fillcolor("#406A40")
     t.pencolor("#3D623D")
+    
     t.begin_fill()
     t.circle(50,145)
     t.forward(80)
@@ -2149,6 +2183,7 @@ def draw_zgutici():
     t.down()
     t.left(150)
     t.pencolor("#8e815a")
+    
     t.begin_fill()
     t.left(170)
     t.circle(100,40)
@@ -2167,12 +2202,14 @@ def draw_zgutici():
     t.goto(400,350)
     t.goto(400,180)
     t.end_fill()
+    
     t.up()
     t.goto(240,350)
     t.down()
     t.pencolor("#893D26")
     t.fillcolor("#89412C")
     t.left(160)
+    
     t.begin_fill()
     t.forward(20)
     t.circle(80,30)
@@ -2192,6 +2229,7 @@ def draw_zgutici():
     t.up()
     t.goto(170,210)
     t.down()
+    
     t.begin_fill()
     t.right(90)
     t.circle(20,90)
@@ -2212,11 +2250,13 @@ def draw_zgutici():
     t.down()
     t.pencolor("#a4a4a4")
     t.fillcolor("#b5b5b5")
+    
     t.begin_fill()
     t.circle(12,360)
     t.end_fill()
     t.pencolor("#383838")
     t.up()
+    
     t.goto(262,51)
     t.down()
     t.dot(8)
@@ -2226,6 +2266,7 @@ def draw_zgutici():
     t.down()
     t.pencolor("#a4a4a4")
     t.fillcolor("#b5b5b5")
+    
     t.begin_fill()
     t.circle(10,360)
     t.end_fill()
@@ -2242,6 +2283,7 @@ def draw_zgutici():
     t.down()
     t.fillcolor("#6C6C6C")
     t.pencolor("#727272")
+    
     t.begin_fill()
     t.right(90)
     t.circle(50,25)
@@ -2262,7 +2304,8 @@ def draw_zgutici():
     t.down()
 
     t.fillcolor("#6C6C6C")
-    t.pencolor("#727272")
+    t.pencolor("#727272
+    
     t.begin_fill()
     t.right(90)
     t.circle(50,25)
@@ -2277,7 +2320,6 @@ def draw_zgutici():
     t.end_fill()
 
     t.right(170)
-
 
     t.pencolor("#2D2D2D")
     t.up()
@@ -2364,12 +2406,14 @@ def draw_zgutici():
     t.down()
     t.pencolor("#D26939")
     t.fillcolor("#DA7647")
+               
     t.begin_fill()
     t.goto(100,-200)
     t.goto(100,-300)
     t.goto(-300,-300)
     t.goto(-300,-200)
     t.end_fill()
+               
     t.pencolor("#000000")
     t.up()
     t.goto(-250,-225)
