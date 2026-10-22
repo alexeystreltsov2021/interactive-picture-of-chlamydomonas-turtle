@@ -908,8 +908,6 @@ def all(x,y):
         xlomidomonada()
         is_on_root = 0
 
-    print(x,y)
-
 
 def draw_core():
 
